@@ -1,4 +1,4 @@
-.original-button {
+#botaoinicio {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
     background-color: #19d256;
   }
   
-  .original-button:hover {
+  #botaoinicio :hover {
     box-shadow: 0 0 rgba(0, 0, 0, 0.4);
     border-bottom-width: 2px;
     transform: translateY(2px);
