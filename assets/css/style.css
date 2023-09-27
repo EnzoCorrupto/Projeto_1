@@ -21,3 +21,26 @@
     border-bottom-width: 2px;
     transform: translateY(2px);
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: beige;
+  }
+
+  #menuJogo{
+    background-color: aliceblue;
+    align-items: center;
+    margin: 10%;
+    border-width: thick;
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 50px;
+  }
