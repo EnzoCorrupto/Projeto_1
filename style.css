@@ -1,15 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+body {
+  background: blue;
+}
 
-  body{
-    background-color: blue;
-  }
 .menuInicial {
-  background-color:crimson;
+  background: crimson;
   width: 90%;
   max-width: 600px;
   margin: 100px auto 0;
@@ -17,7 +17,7 @@
   padding: 30px;
 }
 
-.menuInicial h1{
+.menuInicial h1 {
   font-size: 40px;
   color: yellow;
   text-align: center;
@@ -25,29 +25,28 @@
   font-weight: 600;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
-  text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.menuInicial h2{
+.menuInicial h2 {
   color: aliceblue;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-#quiz{
-  padding:20px 0;
+#quiz {
+  padding: 20px 0;
 }
 
-#quiz h2{
+#quiz h2 {
   font-size: 25px;
-  text-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.btn{
+.btn {
   background-color: aliceblue;
   font-weight: 700;
   width: 100%;
-  border: 1px solid black ;
+  border: 1px solid black;
   padding: 10px;
   margin: 5px 0;
   text-align: left;
@@ -57,10 +56,10 @@
 }
 
 .btn:hover {
-  background-color:blue;
+  background-color: blue;
 }
 
-#proximaBtn{
+#proximaBtn {
   background-color: aliceblue;
   align-items: center;
   color: black;
@@ -72,4 +71,9 @@
   cursor: pointer;
   display: none;
 }
-
+.correto{
+  background-color: greenyellow;
+}
+.incorreto{
+  background-color: red;
+}
