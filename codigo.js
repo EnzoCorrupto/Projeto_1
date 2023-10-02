@@ -2,46 +2,46 @@ const perguntas = [
     {
         pergunta: "Complete a canção: Levo isso a sério, Drip Hard'..",
         respostas: [
-            { text: "Sessão de estúdio, mic e placa", correct: true },
-            { text: "Plaqtudum", correct: false },
-            { text: "Fumaça na minha cabeça", correct: false },
-            { text: "Subindo o ceu é o limite", correct: false },
+            { a: "Sessão de estúdio, mic e placa", correct: true },
+            { b: "Plaqtudum", correct: false },
+            { c: "Fumaça na minha cabeça", correct: false },
+            { d: "Subindo o ceu é o limite", correct: false },
         ]
     },
     {
         pergunta: "Qual a linguagem principal utilizada neste trabalho?",
         respostas: [
-            { text: "C++", correct: false },
-            { text: "Kotlin", correct: false },
-            { text: "Javascript", correct: true },
-            { text: "Julia", correct: false },
+            { a: "C++", correct: false },
+            { b: "Kotlin", correct: false },
+            { c: "Javascript", correct: true },
+            { d: "Julia", correct: false },
         ]
     },
     {
         pergunta: "Qual a cor do cavalo branco de napoleão",
         respostas: [
-            { text: "Cinza", correct: false },
-            { text: "Verde", correct: false },
-            { text: "Preto", correct: false },
-            { text: "Branco", correct: true },
+            { a: "Cinza", correct: false },
+            { b: "Verde", correct: false },
+            { c: "Preto", correct: false },
+            { d: "Branco", correct: true },
         ]
     },
     {
         pergunta: "Qual é o nome do pai de Naruto Uzumaki?",
         respostas: [
-            { text: "Jiraya", correct: false },
-            { text: "Kakashi", correct: false },
-            { text: "Gai", correct: false },
-            { text: "Minato", correct: true },
+            { a: "Jiraya", correct: false },
+            { b: "Kakashi", correct: false },
+            { c: "Gai", correct: false },
+            { d: "Minato", correct: true },
         ]
     },
     {
         pergunta: "Do que é feito a pamonha??",
         respostas: [
-            { text: "Côco", correct: false },
-            { text: "Banana", correct: false },
-            { text: "Milho", correct: true },
-            { text: "Arroz", correct: false },
+            { a: "Côco", correct: false },
+            { b: "Banana", correct: false },
+            { c: "Milho", correct: true },
+            { d: "Arroz", correct: false },
         ]
     }
 ];
