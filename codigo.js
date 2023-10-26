@@ -46,84 +46,16 @@ const perguntas = [
     }
 ];
 
-const perguntaElement = document.getElementById("pergunta");
-const respostaButtons = document.getElementById("respostaBotao");
-const proximaButton = document.getElementById("proximaBtn");
+;let currentQuestion = 0;
 
-let currentPerguntaIndex = 0;
-let pontos = 0;
+loadQuiz();
 
-function inicioQuiz() {
-    currentPerguntaIndex = 0;
-    pontos = 0;
-    proximaButton.innerHTML = "Proximo";
-    mostrarPergunta();
+const questionId = document.getElementById(perguntas)
+a_text= document.getElementById("a_text");
+b_text= document.getElementById("b_text");
+c_text= document.getElementById("c_text");
+d_text= document.getElementById("d_text");
+
+function loadQuiz() {
+
 }
-
-function mostrarPergunta() {
-    redefinirEstado();
-    let currentPergunta = perguntas[currentPerguntaIndex];
-    let perguntaNo = currentPerguntaIndex + 1;
-    perguntaElement.innerHTML = perguntaNo + ". " + currentPergunta.pergunta;
-
-    currentPergunta.respostas.forEach(resposta => {
-        const button = document.createElement("button");
-        button.innerHTML = resposta.text;
-        button.classList.add("btn");
-        respostaButtons.appendChild(button);
-        if (resposta.correct) {
-            button.dataset.correct = resposta.correct;
-        }
-        button.addEventListener("click", selecionarResposta);
-    });
-}
-
-function redefinirEstado() {
-    proximaButton.style.display = "none";
-    while (respostaButtons.firstChild) {
-        respostaButtons.removeChild(respostaButtons.firstChild);
-    }
-}
-
-function selecionarResposta(e) {
-    const btnSelecionado = e.target;
-    const estaCorreto = btnSelecionado.dataset.correct === "true";
-    if (estaCorreto) {
-        btnSelecionado.classList.add("correto");
-        pontos++;
-    } else {
-        btnSelecionado.classList.add("incorreto");
-    }
-    Array.from(respostaButtons.children).forEach(button => {
-        if (button.dataset.correct === "true") {
-            button.disabled = true;
-        }
-    });
-    proximaButton.style.display = "block";
-}
-
-function mostrarPontos() {
-    redefinirEstado();
-    perguntaElement.innerHTML = `Você pontuou ${pontos} de ${perguntas.length}!`;
-    proximaButton.innerHTML = "Jogar Novamente";
-    proximaButton.style.display = "block";
-}
-
-function handleNextButton() {
-    currentPerguntaIndex++;
-    if (currentPerguntaIndex < perguntas.length) {
-        mostrarPergunta();
-    } else {
-        mostrarPontos();
-    }
-}
-
-proximaButton.addEventListener("click", () => {
-    if (currentPerguntaIndex < perguntas.length) {
-        handleNextButton();
-    } else {
-        inicioQuiz();
-    }
-});
-
-inicioQuiz();
